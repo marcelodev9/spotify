@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    android:layout_marginBottom="25dp">
+
+    <ImageView
+        android:id="@+id/imageViewBand"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_logo"
+        android:layout_marginHorizontal="15dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/imageViewBand"
+        app:layout_constraintStart_toEndOf="@id/imageViewBand"
+        android:text="PARECIDO COM"
+        android:textColor="@color/silver"
+        android:layout_marginHorizontal="15dp"
+        android:textSize="11sp"
+        android:textAllCaps="true"
+        />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/imageViewBand"
+        app:layout_constraintStart_toStartOf="@id/textViewTitle"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewBand"
+        android:text="Imagine Dragons"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewBand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal"
+        tools:listitem="@layout/layout_list_horizontal_adapter_type_1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

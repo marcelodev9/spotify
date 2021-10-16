@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Spotify Android</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_search">Buscar</string>
+    <string name="title_library">Sua biblioteca</string>
+    <string name="library_music">Músicas</string>
+    <string name="library_podcast">Podcasts</string>
+    <string name="library_music_playlist">Playlists</string>
+    <string name="library_music_artists">Artistas</string>
+    <string name="library_music_albums">Albuns</string>
+    <string name="library_podcast_episodes">Episódios</string>
+    <string name="library_podcast_downloads">Downloads</string>
+    <string name="library_podcast_programs">Programas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
